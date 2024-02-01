@@ -14,6 +14,16 @@ const projectsData = [
     secondLink: 'https://github.com/mustafaalihasan/design_your_shoe'
   },
 
+  { id: 1, 
+    title: 'ERPNOW Solutions Inc.', 
+    category: 'web-dev', 
+    image: '../src/assets/erpnow.jpeg', 
+    description: 'Developed a company website using HTML, CSS, JavaScript, & Bootstrap. Designed the user interface in Figma and implemented responsive design principles.',
+    video: '../src/assets/erpnow.webm',
+    projectLink: 'https://mustafaalihasan.github.io/ERPNOW_Consulting_Inc/',
+    secondLink: '_blank'
+  },
+
   { id: 2, 
     title: 'Germ Glide', 
     category: 'game', 
@@ -21,7 +31,7 @@ const projectsData = [
     description: '2D Game in C# and Unity where player must avoid bacteria-like obstacles in order to progress. Developed a leaderboard system for multiplayer action storing data on SQLite database.',
     video: '../src/assets/germ_glide.webm',
     projectLink: 'https://vermillion-taffy-ef8f11.netlify.app/',
-    secondLink: 'sorry, not available'
+    secondLink: '_blank'
   },
 
   { id: 3, 
@@ -29,7 +39,7 @@ const projectsData = [
     category: '3d-creation', 
     image: '../src/assets/car_tunnel.png', 
     description: '',
-    video: '../src/assets/car_tunnel.mp4',
+    video: '../src/assets/car_tunnel.webm',
   },  // Add more projects with different categories
 
   { id: 3, 
@@ -147,7 +157,7 @@ const Projects = () => {
           <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
             <video 
               controls
-              className='w-full max-w-2xl max-h-2xl'
+              className='w-full max-w-2xl'
               src={selectedProject.video} 
               type='video/mp4'
               autoPlay
