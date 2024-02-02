@@ -21,7 +21,7 @@ const projectsData = [
     description: 'Developed a company website using HTML, CSS, JavaScript, & Bootstrap. Designed the user interface in Figma and implemented responsive design principles.',
     video: '../src/assets/erpnow.webm',
     projectLink: 'https://mustafaalihasan.github.io/ERPNOW_Consulting_Inc/',
-    secondLink: '_blank'
+    secondLink: ''
   },
 
   { id: 2, 
@@ -121,22 +121,23 @@ const Projects = () => {
       <div className='flex flex-wrap justify-center mt-20 gap-8'>
         {filterProjects(selectedTab).map((project) => (
           <div 
-          key={project.id} 
+          key={project.title} 
           className='border-t-2 border-b-2 border-purple-800 hover:scale-105 hover:border-t-8 hover:border-b-8 transition-all ease-in-out duration-300 rounded-3xl bg-slate-900 w-full max-w-xs h-full p-4 text-center'
           onClick={() => handleProjectClick(project)}
           >
             {project.projectLink ? (
-              <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
               <h3 className='mt-2 flex justify-between text-white  cursor-pointer'>
-                <span className='hover:text-blue-500'><FaExternalLinkAlt /></span>
-                {project.title}
-                {project.secondLink && (
-                  <a href={project.secondLink} target="_blank" rel="noopener noreferrer" className='flex justify-end'>
-                    <span className='hover:text-blue-500'><FaGithub /></span>
-                  </a>
-                )}
-              </h3>
-            </a>
+                <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
+                  <span className='hover:text-blue-500'><FaExternalLinkAlt /></span>
+                </a>
+              <span className={project.secondLink ? "" : "mr-[4.25em]"}>{project.title}</span>
+              {project.secondLink && (
+                <a href={project.secondLink} target="_blank" rel="noopener noreferrer" className='flex justify-end'>
+                  <span className='hover:text-blue-500'><FaGithub /></span>
+                </a>
+              )}
+            </h3>
+
             ) : (
               <h3 className='mt-2'>{project.title}</h3>
             )}
