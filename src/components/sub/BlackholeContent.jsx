@@ -39,7 +39,7 @@ const BlackholeContent = () => {
             className='w-1/2 ml-2'
             style={{marginTop: '15%' }}
             >
-                <source src='../src/assets/scrollVideo.webm' type='video/webm' />
+                <source src='/scrollVideo.webm' type='video/webm' />
                 Your browser does not support the video tag.
               </video>
           </div>
@@ -68,7 +68,7 @@ const BlackholeContent = () => {
       >
         <motion.div className="w-4/5 mb-24">
           <video autoPlay loop muted>
-            <source src='../src/assets/cutout_1.webm' type='video/webm' />
+            <source src='/cutout_1.webm' type='video/webm' />
           </video>
         </motion.div>
       </motion.div>

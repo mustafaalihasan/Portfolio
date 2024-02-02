@@ -7,9 +7,9 @@ const projectsData = [
   { id: 1, 
     title: 'Design Your Shoe', 
     category: 'web-dev', 
-    image: '../src/assets/design_shoe.jpeg', 
+    image: '/design_shoe.jpeg', 
     description: 'Full Stack Custom 3D Sneaker Design Web App using React, Three.js and Tailwind CSS. Allows users to create fully customized 3D shoes with OpenAI integration to maximise design creativity.',
-    video: '../src/assets/design_shoe.webm',
+    video: '/design_shoe.webm',
     projectLink: 'https://vermillion-taffy-ef8f11.netlify.app/',
     secondLink: 'https://github.com/mustafaalihasan/design_your_shoe'
   },
@@ -17,9 +17,9 @@ const projectsData = [
   { id: 1, 
     title: 'ERPNOW Solutions Inc.', 
     category: 'web-dev', 
-    image: '../src/assets/erpnow.jpeg', 
+    image: '/erpnow.jpeg', 
     description: 'Developed a company website using HTML, CSS, JavaScript, & Bootstrap. Designed the user interface in Figma and implemented responsive design principles.',
-    video: '../src/assets/erpnow.webm',
+    video: '/erpnow.webm',
     projectLink: 'https://mustafaalihasan.github.io/ERPNOW_Consulting_Inc/',
     secondLink: ''
   },
@@ -27,9 +27,9 @@ const projectsData = [
   { id: 2, 
     title: 'Germ Glide', 
     category: 'game', 
-    image: '../src/assets/germ_glide.jpeg', 
+    image: '/germ_glide.jpeg', 
     description: '2D Game in C# and Unity where player must avoid bacteria-like obstacles in order to progress. Developed a leaderboard system for multiplayer action storing data on SQLite database.',
-    video: '../src/assets/germ_glide.webm',
+    video: '/germ_glide.webm',
     projectLink: 'https://vermillion-taffy-ef8f11.netlify.app/',
     secondLink: '_blank'
   },
@@ -37,17 +37,17 @@ const projectsData = [
   { id: 3, 
     title: 'Mclaren 720S', 
     category: '3d-creation', 
-    image: '../src/assets/car_tunnel.png', 
+    image: '/car_tunnel.png', 
     description: '',
-    video: '../src/assets/car_tunnel.webm',
+    video: '/car_tunnel.webm',
   },  // Add more projects with different categories
 
   { id: 3, 
     title: 'Star Wars Test', 
     category: '3d-creation', 
-    image: '../src/assets/planet.jpeg', 
+    image: '/planet.jpeg', 
     description: '',
-    video: '../src/assets/planet.mp4',
+    video: '/planet.mp4',
   }, 
 ];
 

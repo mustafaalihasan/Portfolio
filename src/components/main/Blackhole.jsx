@@ -10,7 +10,7 @@ const Blackhole = () => {
         loop
         muted
       >
-        <source src="../src/assets/blackhole.webm" type="video/webm" />
+        <source src="/blackhole.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
       <BlackholeContent />

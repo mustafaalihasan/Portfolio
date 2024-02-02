@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className='w-full h-full flex flex-row items-center justify-between m-auto px-[10px]'>
         <a href='/' className='h-auto w-auto flex flex-row items-center'>
           <img
-            src="../src/assets/M.png"
+            src="/M.png"
             alt="Logo"
             className="cursor-pointer hover:animate-slowspin w-10 h-10"
           />
@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className='flex flex-row gap-5'>
           <a href='https://www.instagram.com/itzcaptmoses/' target='_blank'>
             <img
-              src='../src/assets/instagram.png'
+              src='/instagram.png'
               className='cursor-pointer'
               width={24}
               height={24}
@@ -39,7 +39,7 @@ const Navbar = () => {
           </a>
           <a href='https://www.linkedin.com/in/mustafa-ali-hasan/' target='_blank'>
             <img
-              src='../src/assets/linkedin.png'
+              src='/linkedin.png'
               className='cursor-pointer'
               width={24}
               height={24}
@@ -48,7 +48,7 @@ const Navbar = () => {
 
           <a href='https://github.com/mustafaalihasan' target='_blank'>
             <img
-              src='../src/assets/github.png'
+              src='/github.png'
               className='cursor-pointer'
               width={24}
               height={24}
